@@ -8,8 +8,8 @@ A client running on the same local machine communicates with the microservice us
 
 The client initiates a request by:
 1. Establishing a connection to the RabbitMQ message broker located on the same network as the microservice (amqp://127.0.0.1) (note: third-party libraries will need to be imported on the client application. eg. if using Python, 'pika' and 'requests' will need to be manually imported).
-2. Connect to the same message queue as the microservice to publish and consume messages (documentation: https://www.rabbitmq.com/tutorials/tutorial-six-python.html)
-3. Make an HTTP request to the microservice located at http://localhost:5672/add-songs to initiate a request and send the Spotify input .csv file to the message queue to be retrieved by the microservice. (note: requests can be made from the client application without needing to use a web browser - https://requests.readthedocs.io/en/latest/).
+2. Connecting to the same message queue as the microservice to publish and consume messages (documentation: https://www.rabbitmq.com/tutorials/tutorial-six-python.html)
+3. Making an HTTP request to the microservice located at http://localhost:5672/add-songs to initiate a request and send the Spotify input .csv file to the message queue to be retrieved by the microservice. (note: requests can be made from the client application without needing to use a web browser - https://requests.readthedocs.io/en/latest/).
 
 # Receive Data
 
